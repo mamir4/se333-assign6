@@ -19,7 +19,7 @@ public class BookStoreTest {
         @BeforeAll
         static void setup() {
                 playwright = Playwright.create();
-                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
         }
 
         @BeforeEach
